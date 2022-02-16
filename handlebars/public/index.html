@@ -4,19 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
+    <title>Formulario de Ingreso de Productos</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
+
     <div class="container mt-3">
         <div class="jumbotron">
             <h1>Ingrese Producto</h1>
             <br>
+
             <form action="/productos" method="POST">
                 <div class="form-group">
-                    <label for="nombre">Nombre</label>
+                    <label for="nombre">Nombre del producto</label>
                     <input id="nombre" class="form-control" type="text" name="title" required>
                 </div>
                 <div class="form-group">
@@ -30,8 +33,10 @@
                 <button class="btn btn-success mt-3">Añadir producto</button>
             </form>
             <br>
-            <a href="/productos" type="button" class="btn btn-primary">Ver lista de productos</button>
+            <a href="/productos" type="button" class="btn btn-primary">Lista de productos</button>
         </div>
     </div>
+
 </body>
+
 </html>

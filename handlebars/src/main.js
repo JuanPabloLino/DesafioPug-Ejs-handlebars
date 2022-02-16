@@ -29,7 +29,7 @@ app.post('/productos', (req, res) => {
 app.get('/productos', (req, res) => {
     const prods = productosApi.listarAll()
 
-    res.render("Vista de proucto", {
+    res.render("vista", {
         productos: prods,
         hayProductos: prods.length
     });
@@ -37,6 +37,6 @@ app.get('/productos', (req, res) => {
 
 const PORT = 8080
 const server = app.listen(PORT, () => {
-    console.log(`Servidor corriendo en: ${server.address().port}`)
+    console.log(`Servidor http escuchando en el puerto ${server.address().port}`)
 })
 server.on("error", error => console.log(`Error en servidor ${error}`))
